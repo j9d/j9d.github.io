@@ -3,13 +3,18 @@
 }
 
 .top {
+    margin-bottom: 2em;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.top-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 2em 5em;
+    margin: 0 auto;
     height: fit-content;
-    margin-bottom: 2em;
-    border-bottom: 1px solid #CCCCCC;
+    max-width: 1200px;
 }
 
 h1, h2, h3 {
@@ -36,6 +41,14 @@ em {
     font-weight: 600;
 }
 
+.centered {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
 nav {
     float: right;
     display: inline;
@@ -58,11 +71,11 @@ body {
 }
 
 .notice {
-    margin-left: 25%;
+    margin: 0 25%;
 }
 
 article {
-    margin: 0px 20%;
+    margin: 0 20%;
     padding-bottom: 100px;
 }
 
