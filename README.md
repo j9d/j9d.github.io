@@ -1,2 +1,2 @@
-# j9d.github.io
-My portfolio, for now it'll just host some of my photography projects. Also serves as my learning space for React.
+# My website
+My portfolio, I guess. Contains my photography, for now. Access it [here](https://j9d.github.io/).

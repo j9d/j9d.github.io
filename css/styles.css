@@ -1,0 +1,139 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 5em;
+    height: fit-content;
+    margin-bottom: 2em;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+    color: #333333;
+}
+
+h1 {
+    display: inline;
+    font-size: 2.5em;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.25em;
+    margin: 0;
+}
+
+em {
+    font-weight: 600;
+}
+
+nav {
+    float: right;
+    display: inline;
+    margin: auto 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333333;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+nav a:active {
+    color:#AAAAAA
+}
+
+body {
+    margin: 0;
+}
+
+.notice {
+    margin-left: 25%;
+}
+
+article {
+    margin: 0px 20%;
+    padding-bottom: 100px;
+}
+
+article a {
+    text-decoration: none;
+    color:lightseagreen;
+}
+
+article a:active {
+    color: #C7FFFD;
+}
+
+hr {
+    width: 50%;
+    border: none;
+    border-bottom: 1px solid #CCCCCC;
+    margin: 40px auto;
+}
+
+.section-top {
+    width: 20%;
+}
+
+.mini-section {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.feature-img {
+    display: inline;
+    width: 40%;
+}
+
+.img-info {
+    width: 40%;
+    display: inline;
+    margin: auto 0;
+    text-align: justify;
+}
+
+.img-left .img-info {
+    padding-left: 2%;
+    padding-right: 18%;
+    float: right;
+}
+
+.img-right .img-info {
+    padding-left: 18%;
+    padding-right: 2%;
+    float: left;
+}
+
+.gallery-img {
+    width: 24%;
+}
+
+.back > * {
+    font-size: 1.5em;
+    color: #333333;
+    text-decoration: none;
+    margin: 0.5em;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar {
+    display: none;
+  }
+  
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
