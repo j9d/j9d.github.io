@@ -4,8 +4,9 @@
     color: #222222;
 }
 
-h1, h2, h3 {
+h1, h2 {
     font-weight: normal;
+    margin: 0;
 }
 
 h1 {
@@ -15,12 +16,6 @@ h1 {
 
 h2 {
     font-size: 2em;
-    margin: 0;
-}
-
-h3 {
-    font-size: 1.25em;
-    margin: 0;
 }
 
 em {
@@ -46,10 +41,6 @@ em {
     margin: 0 auto;
     height: 4em;
     max-width: 75em;
-}
-
-#title {
-    margin-bottom: 1.25em
 }
 
 nav {
@@ -100,14 +91,14 @@ article a {
 }
 
 article a:active {
-    color: #47e5e0;
+    color: #47E5E0;
 }
 
 
 /* Photo gallery */
 .photo-section {
-    margin-bottom: 4em;
     display: flex;
+    margin-bottom: 4em;
     justify-content: space-between;
 }
 
