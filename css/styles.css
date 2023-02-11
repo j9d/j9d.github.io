@@ -18,6 +18,11 @@ h2 {
     font-size: 2em;
 }
 
+p, li {
+    line-height: 150%;
+    text-align: justify;
+}
+
 em {
     font-weight: 600;
 }
@@ -82,7 +87,7 @@ nav a {
 }
 
 nav a:active {
-    color: #AAAAAA
+    color: #AAAAAA;
 }
 
 article a {
@@ -94,6 +99,10 @@ article a:active {
     color: #47E5E0;
 }
 
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.4em;
+}
 
 /* Photo gallery */
 .photo-section {
@@ -109,7 +118,6 @@ article a:active {
 
 .img-info {
     margin: auto 0;
-    text-align: justify;
 }
 
 .img-left .img-info {
