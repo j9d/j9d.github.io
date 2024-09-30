@@ -1,10 +1,11 @@
 /* Text */
 * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     color: #222222;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-weight: normal;
     margin: 0;
 }
@@ -18,7 +19,8 @@ h2 {
     font-size: 2em;
 }
 
-p, li {
+p,
+li {
     line-height: 150%;
     text-align: justify;
 }
@@ -31,34 +33,26 @@ em {
     text-align: center;
 }
 
-
 /* Navigation bar */
-.top {
+header {
     margin-bottom: 2em;
-    border-bottom: 1px solid #CCCCCC;
+    border-bottom: 1px solid #cccccc;
 }
 
-.top-content {
+header > div {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 2em 5em;
+    padding: 2em 3em;
     margin: 0 auto;
-    height: 4em;
+    min-height: 4em;
+    height: fit-content;
     max-width: 75em;
 }
 
-nav {
-    float: right;
-    display: inline;
-    margin: auto 0;
-}
-
-
 /* Sections */
 html {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
 }
 
 body {
@@ -66,7 +60,7 @@ body {
 }
 
 section {
-    margin: 4em 25%;
+    margin: 0 25% 4em;
 }
 
 article {
@@ -84,7 +78,6 @@ article {
     margin: 0 auto;
 }
 
-
 /* Links */
 nav a {
     text-decoration: none;
@@ -93,7 +86,7 @@ nav a {
 }
 
 nav a:active {
-    color: #AAAAAA;
+    color: #aaaaaa;
 }
 
 article a {
@@ -102,7 +95,7 @@ article a {
 }
 
 article a:active {
-    color: #47E5E0;
+    color: #47e5e0;
 }
 
 a:hover {
@@ -154,7 +147,7 @@ a:hover {
 hr {
     width: 20%;
     border: none;
-    border-bottom: 1px solid #CCCCCC;
+    border-bottom: 1px solid #cccccc;
     margin: 40px auto;
 }
 
@@ -162,28 +155,18 @@ li::marker {
     font-size: 0.8em;
 }
 
-
 /* Mobile view */
 @media (max-width: 850px), screen and (orientation: portrait) {
-    .top-content {
-        height: fit-content;
+    header > div {
+        flex-direction: column;
     }
-    .top-content div {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        margin-bottom: 2em;
-    }
-    nav {
-        display: flex;
-        justify-content: center;
-        width: 100%;
+    header h1 {
+        margin-bottom: 1rem;
     }
     section {
         margin: 2em 10%;
     }
 }
-
 
 /* Hide scrollbar */
 
@@ -194,6 +177,6 @@ html::-webkit-scrollbar {
 
 /* IE, Edge and Firefox */
 html {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
