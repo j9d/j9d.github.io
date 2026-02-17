@@ -25,15 +25,15 @@ li {
     text-align: justify;
 }
 
+li::marker {
+    font-size: 0.8em;
+}
+
 em {
     font-weight: 600;
 }
 
-.text-centered {
-    text-align: center;
-}
-
-/* Navigation bar */
+/* Navbar */
 header {
     margin-bottom: 2em;
     border-bottom: 1px solid #cccccc;
@@ -47,10 +47,34 @@ header > div {
     margin: 0 auto;
     min-height: 4em;
     height: fit-content;
-    max-width: 75em;
+    max-width: 75rem;
 }
 
-/* Sections */
+/* Links */
+nav a {
+    text-decoration: none;
+    margin: 0 0.5em;
+
+    &:active {
+        color: #aaaaaa;
+    }
+}
+
+p a {
+    text-decoration: none;
+    color: lightseagreen;
+
+    &:active {
+        color: #47e5e0;
+    }
+
+    &:hover {
+        text-decoration: underline;
+        text-underline-offset: 0.4em;
+    }
+}
+
+/* Misc */
 html {
     background-color: #f2f2f2;
 }
@@ -60,81 +84,7 @@ body {
 }
 
 section {
-    width: 100%;
-    margin-bottom: 4rem;
-}
-
-article.small {
-    max-width: 30rem;
-    width: 80%;
-    margin: 0 auto;
-}
-
-article.large {
-    max-width: 60rem;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.fixed-width {
-    width: fit-content;
-    margin: 0 auto;
-}
-
-/* Links */
-nav a {
-    text-decoration: none;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-}
-
-nav a:active {
-    color: #aaaaaa;
-}
-
-article a {
-    text-decoration: none;
-    color: lightseagreen;
-}
-
-article a:active {
-    color: #47e5e0;
-}
-
-a:hover {
-    text-decoration: underline;
-    text-underline-offset: 0.4em;
-}
-
-/* Photo gallery */
-.headline img,
-.headline a {
-    width: 100%;
-    margin: 0;
-}
-
-.carousel {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5px;
-}
-
-.carousel a {
-    width: calc(calc(100% / 3) - calc(20px / 3));
-
-    & > img {
-        width: 100%;
-    }
-}
-
-.gallery-images {
-    display: flex;
-    justify-content: space-between;
-}
-
-.gallery-images img {
-    width: 24%;
-    margin: 2em 0.5%;
+    margin: 0 auto 2rem;
 }
 
 hr {
@@ -142,10 +92,6 @@ hr {
     border: none;
     border-bottom: 1px solid #cccccc;
     margin: 40px auto;
-}
-
-li::marker {
-    font-size: 0.8em;
 }
 
 /* Mobile view */
@@ -156,9 +102,5 @@ li::marker {
 
     header h1 {
         margin-bottom: 1rem;
-    }
-
-    section {
-        margin: 2rem auto;
     }
 }

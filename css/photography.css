@@ -1,0 +1,44 @@
+article {
+    max-width: 60rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.gear {
+    width: fit-content;
+}
+
+a > img {
+    width: 100%;
+}
+
+.headline a {
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.carousel a {
+    width: calc(calc(100% / 3) - calc(20px / 3));
+}
+
+.more-images {
+    h2 {
+        text-align: center;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+
+        a {
+            width: calc(25% - calc(30px / 4));
+        }
+    }
+}
